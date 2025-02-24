@@ -9,12 +9,25 @@ module.exports = plugin(({ addComponents }) => {
       justifyContent: 'center',
       alignItems: 'center',
     },
+    '.row-start': {
+      display: 'flex',
+      gap: '1.25rem',
+      justifyContent: 'flex-start',
+      alignItems: 'center',
+    },
     '.col-center': {
       display: 'flex',
       flexDirection: 'column',
       gap: '1.25rem',
       justifyContent: 'center',
       alignItems: 'center',
+    },
+    '.col-start': {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '1.25rem',
+      justifyContent: 'center',
+      alignItems: 'flex-start',
     },
     '.basic-padding': {
       paddingLeft: '1.25rem',
