@@ -34,10 +34,10 @@ export default function TabLayout() {
           tabBarStyle: {
             height: 55,
           },
-          sceneStyle: {
-            padding: 20,
-            backgroundColor: Colors[colorScheme ?? 'light'].background,
-          },
+          // sceneStyle: {
+          //   padding: 20,
+          //   backgroundColor: Colors[colorScheme ?? 'light'].background,
+          // },
           tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
           headerShown: true,
           tabBarBackground: TabBarBackground,
