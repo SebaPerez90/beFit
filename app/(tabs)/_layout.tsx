@@ -1,8 +1,7 @@
 import { Tabs } from 'expo-router';
 import React from 'react';
-import TabBarBackground from '@/components/ui/TabBarBackground';
-import { Colors } from '@/constants/Colors';
-import { useColorScheme } from '@/hooks/useColorScheme';
+import { Colors } from '@/modules/core/constants/Colors';
+import { useColorScheme } from '@/modules/core/hooks/useColorScheme';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -31,16 +30,12 @@ export default function TabLayout() {
     <SafeAreaView className='flex-1'>
       <Tabs
         screenOptions={{
-          tabBarStyle: {
-            height: 55,
-          },
           // sceneStyle: {
           //   padding: 20,
           //   backgroundColor: Colors[colorScheme ?? 'light'].background,
           // },
           tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
           headerShown: true,
-          tabBarBackground: TabBarBackground,
         }}>
         {tabsData.map((data, index) => (
           <Tabs.Screen

@@ -1,12 +1,12 @@
+import { useThemeColor } from '@/modules/core/hooks/useThemeColor';
 import { StyleSheet, View, type ViewProps } from 'react-native';
-import { useThemeColor } from '@/hooks/useThemeColor';
 
 export type ThemedViewProps = ViewProps & {
   lightColor?: string;
   darkColor?: string;
 };
 
-export function ThemedView({
+export function ScreenView({
   style,
   lightColor,
   darkColor,
@@ -27,6 +27,8 @@ export function ThemedView({
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 15,
+    paddingHorizontal: 14,
+    paddingTop: 20,
+    paddingBottom: 10,
   },
 });

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { ThemedView } from '@/components/ThemedView';
-import { ThemedText } from '@/components/ThemedText';
+import { CustomText } from '@/modules/core/components/CustomText';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { Pressable, Text } from 'react-native';
+import { Pressable, Text, View } from 'react-native';
+import { ScreenView } from '@/modules/core/components/ScreenView';
 
 export default function Index() {
   const [data, setData] = useState<string | null>('');
@@ -20,8 +20,8 @@ export default function Index() {
   }, []);
 
   return (
-    <ThemedView>
-      <ThemedText type='subtitle'>Test de "Async Storage"</ThemedText>
+    <ScreenView>
+      <CustomText type='subtitle'>Test de "Async Storage"</CustomText>
       <Pressable
         delayLongPress={2000}
         onPressOut={() => console.log('yamete judasai')}
@@ -30,9 +30,9 @@ export default function Index() {
         className='p-3 bg-blue-500 rounded-md mt-5 w-1/2'>
         <Text className='text-white font-bold text-center'>Button</Text>
       </Pressable>
-      <ThemedView>
-        <ThemedText type='link'>{data}</ThemedText>
-      </ThemedView>
-    </ThemedView>
+      <View>
+        <CustomText type='link'>{data}</CustomText>
+      </View>
+    </ScreenView>
   );
 }

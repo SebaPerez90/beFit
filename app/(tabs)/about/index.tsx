@@ -1,17 +1,17 @@
-import { ThemedView } from '../../../components/ThemedView';
-import { ThemedText } from '../../../components/ThemedText';
+import { CustomText } from '../../../modules/core/components/CustomText';
 import React from 'react';
 import { Link } from 'expo-router';
+import { ScreenView } from '@/modules/core/components/ScreenView';
 
 export default function index() {
   return (
-    <ThemedView>
-      <ThemedText>
+    <ScreenView>
+      <CustomText>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
         possimus perspiciatis debitis animi dolor nostrum alias maxime esse
         voluptate deleniti aut minus suscipit assumenda eos, perferendis cumque
         ut quis consequatur?
-      </ThemedText>
+      </CustomText>
       <Link
         href={'/about/details'}
         className='text-blue-400'>
@@ -22,6 +22,6 @@ export default function index() {
         className='text-blue-400'>
         View home
       </Link>
-    </ThemedView>
+    </ScreenView>
   );
 }

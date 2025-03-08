@@ -1,11 +1,11 @@
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
+import { CustomText } from '@/modules/core/components/CustomText';
+import { ScreenView } from '@/modules/core/components/ScreenView';
 import React from 'react';
 
 export default function Profile() {
   return (
-    <ThemedView>
-      <ThemedText type='subtitle'>Perfil</ThemedText>
-    </ThemedView>
+    <ScreenView>
+      <CustomText type='subtitle'>Perfil</CustomText>
+    </ScreenView>
   );
 }
