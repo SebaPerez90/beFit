@@ -20,8 +20,8 @@ export default function AboutLayout() {
         options={{ title: 'Index' }}
       />
       <Stack.Screen
-        name='details'
-        options={{ title: 'Details' }}
+        name='pepito'
+        options={{ title: 'pepito' }}
       />
       <Stack.Screen
         name='home'

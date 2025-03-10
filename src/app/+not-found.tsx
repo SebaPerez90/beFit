@@ -1,6 +1,6 @@
 import { Link, Stack } from 'expo-router';
-import { CustomText } from '@/modules/core/components/CustomText';
-import { ScreenView } from '@/modules/core/components/ScreenView';
+import { CustomText } from '@/src/modules/core/components/CustomText';
+import { ScreenView } from '@/src/modules/core/components/ScreenView';
 
 export default function NotFoundScreen() {
   return (

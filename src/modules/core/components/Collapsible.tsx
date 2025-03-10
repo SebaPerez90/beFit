@@ -1,9 +1,9 @@
 import { PropsWithChildren, useState } from 'react';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { CustomText } from '@/modules/core/components/CustomText';
-import { Colors } from '@/modules/core/constants/Colors';
-import { useColorScheme } from '@/modules/core/hooks/useColorScheme';
+import { CustomText } from '@/src/modules/core/components/CustomText';
+import { Colors } from '@/src/modules/core/constants/Colors';
+import { useColorScheme } from '@/src/modules/core/hooks/useColorScheme';
 import { ScreenView } from './ScreenView';
 
 export function Collapsible({

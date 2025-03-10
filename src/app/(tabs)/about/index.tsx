@@ -1,7 +1,7 @@
-import { CustomText } from '../../../modules/core/components/CustomText';
 import React from 'react';
 import { Link } from 'expo-router';
-import { ScreenView } from '@/modules/core/components/ScreenView';
+import { ScreenView } from '@/src/modules/core/components/ScreenView';
+import { CustomText } from '@/src/modules/core/components/CustomText';
 
 export default function index() {
   return (
@@ -13,9 +13,9 @@ export default function index() {
         ut quis consequatur?
       </CustomText>
       <Link
-        href={'/about/details'}
+        href={'/about/pepito'}
         className='text-blue-400'>
-        View details
+        View pepito
       </Link>
       <Link
         href={'/about/home'}

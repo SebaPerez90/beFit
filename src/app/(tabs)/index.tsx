@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { CustomText } from '@/modules/core/components/CustomText';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Pressable, Text, View } from 'react-native';
-import { ScreenView } from '@/modules/core/components/ScreenView';
+import { CustomText } from '@/src/modules/core/components/CustomText';
+// import { ScreenView } from '@/src/modules/core/components/ScreenView';
+import '../../styles/globals.css';
+import { ScreenView } from '@/src/modules/core/components/ScreenView';
 
 export default function Index() {
   const [data, setData] = useState<string | null>('');

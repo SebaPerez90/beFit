@@ -1,7 +1,7 @@
 import { Tabs } from 'expo-router';
 import React from 'react';
-import { Colors } from '@/modules/core/constants/Colors';
-import { useColorScheme } from '@/modules/core/hooks/useColorScheme';
+import { Colors } from '@/src/modules/core/constants/Colors';
+import { useColorScheme } from '@/src/modules/core/hooks/useColorScheme';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
